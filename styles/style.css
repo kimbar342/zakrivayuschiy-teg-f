@@ -105,7 +105,7 @@
 }
 
 .saturate_filter {
-  filter: saturate(115%);
+  filter: saturate(65%);
 }
 
 .brightness_filter {
@@ -113,7 +113,7 @@
 }
 
 .sepia_filter {
-  filter: sepia(5%);
+  filter: sepia(45%);
 }
 
 .contrast_filter {
@@ -127,9 +127,6 @@
 .filterapplied {
   filter: grayscale(100) sepia(0.5) blur(1px)
 }
-
-
-
 
 .card__content {
   display: flex;

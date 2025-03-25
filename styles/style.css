@@ -109,24 +109,27 @@
 }
 
 .brightness_filter {
-  filter: brightness(120%);
+  filter: brightness(30%);
 }
 
 .sepia_filter {
   filter: sepia(5%);
 }
 
-.desaturate_filter {
-  filter: saturate(80%);
+.contrast_filter {
+  filter: contrast(250%);
 }
 
 .hue-rotate_filter {
-  filter: hue-rotate(355deg);
+  filter: hue-rotate(0.5turn);
 }
 
-.hue-rotate_saturate_low_brightness_filter {
-  filter: hue-rotate(350deg) saturate(115%) brightness(90%);
+.filterapplied {
+  filter: grayscale(100) sepia(0.5) blur(1px)
 }
+
+
+
 
 .card__content {
   display: flex;

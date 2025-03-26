@@ -1,27 +1,15 @@
-/* Здесь вы напишете основную часть стилей страницы.
-
-Будьте внимательны! Для корректной работы скриптов на этом сайте нужно, чтобы в HTML некоторые классы были названы особым образом:
-✦ like-icon — для svg-иконки анимированного сердца
-✦ card__like-button — для кнопки Like рядом с иконкой
-✦ card__icon-button — для кнопки, оборачивающей иконку
-✦ card__icon-button — для кнопки, оборачивающей иконку
-✦ is-liked — для обозначения состояния лайкнутой иконки в виде сердца
-✦ button__text — для обозначения текстового элемента внутри кнопки
-
-*/
-
 .page {
   font-family: var(--main-font, 'Inter-Variable'), sans-serif;
-  font-size: var(--main-font-size, 1.125em);
+  font-size: var(--font-size, 1.125em);
   margin: 0 auto;
-  background: var(--background-image, #fff);
+  background: var(--bg-image, #fff);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   min-inline-size: 375px;
   max-inline-size: 700px;
   min-block-size: 100dvb;
-  font-variation-settings: "wght" var(--main-font-weight, 400);
+  font-variation-settings: "wght" var(--font-weight, 400);
 }
 
 .header {
@@ -36,7 +24,7 @@
 }
 
 .scope_buttons {
-  border: var(--element-border, solid 2px #000);
+  border: var(--scope, solid 2px #000);
 }
 
 .header__title {
@@ -146,7 +134,7 @@
   position: relative;
   overflow: hidden;
   transition: box-shadow 0.3s ease;
-  background-color: var(--button-background-color, #fff);
+  background-color: var(--button-color, #fff);
 }
 
 .button:focus {
@@ -169,7 +157,7 @@
 }
 
 .main__card-button:focus-visible {
-  border: var(--element-border, solid 2px #000);
+  border: var(--scope, solid 2px #000);
   outline: none;
 }
 
@@ -207,7 +195,7 @@
   flex-shrink: 0;
   width: 21px;
   height: 21px;
-  color: var(--button-background-color, #fff);
+  color: var(--button-color, #fff);
   mix-blend-mode: difference;
 }
 

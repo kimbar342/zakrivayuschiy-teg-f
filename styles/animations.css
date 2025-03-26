@@ -1,14 +1,3 @@
-/* Опишите в этом файле все keyframes для проекта и стили анимаций иконки Like.
-
-Будьте внимательны! Для корректной работы скриптов на этом сайте нужно, чтобы в HTML некоторые классы были названы особым образом:
-✦ like-icon — для svg-иконки анимированного сердца
-✦ card__like-button — для кнопки Like рядом с иконкой
-✦ card__icon-button — для кнопки, оборачивающей иконку
-✦ card__icon-button — для кнопки, оборачивающей иконку
-✦ is-liked — для обозначения состояния лайкнутой иконки в виде сердца
-✦ button__text — для обозначения текстового элемента внутри кнопки
-
-*/
 @keyframes increasing {
     from {
         scale: 1.0;
@@ -36,7 +25,7 @@
     animation: sparks 0.3s 0.3s ease-in;
 }
 
-.main-body {
+.heart-body {
     transition: fill 0.3s 0s;
     fill: transparent;
 }
@@ -45,42 +34,42 @@
     opacity: 0;
 }
 
-.core {
+.kernel {
     transition: fill 0.3s 0.03s;
     fill: transparent;
 }
 
-.like-icon:hover .core {
+.like-icon:hover .kernel {
     transition: fill 0.3s 0s;
     fill: var(--contour-color);
 }
 
-.like-icon:hover .main-body {
+.like-icon:hover .heart-body {
     transition: fill 0.3s 0.05s;
     fill: var(--contour-color);
 }
 
-.like-icon:active .core {
+.like-icon:active .kernel {
     transition: fill 0.3s 0s;
     fill: var(--animation-fill);
 }
 
-.like-icon:active .main-body {
+.like-icon:active .heart-body {
     transition: fill 0.3s 0.05s;
     fill: var(--animation-fill);
 }
 
-.like-icon.is-liked .core {
+.like-icon.is-liked .kernel {
     transition: fill 0.3s 0s;
     fill: var(--animation-fill);
 }
 
-.like-icon.is-liked .main-body {
+.like-icon.is-liked .heart-body {
     transition: fill 0.3s 0.05s;
     fill: var(--animation-fill);
 }
 
-.like-icon.is-liked .contour {
+.like-icon.is-liked .scope-heart {
     transition: fill 0.3s 0.06s;
     fill: var(--animation-fill);
 }
@@ -101,6 +90,6 @@
     transform: scaleX(1);
 }
 
-.contour {
+.scope-heart {
     transition: fill 0.1s linear 0s;
 }
